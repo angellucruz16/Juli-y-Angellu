@@ -92,6 +92,21 @@ body {
 }
 
 .info__decor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 15%;
+}
+
+.info__photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3em;
+}
+
+.about-photo {
+  margin: auto;
+  width: 30%;
 }
 /*# sourceMappingURL=style.css.map */

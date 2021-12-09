@@ -63,6 +63,17 @@ body {
   margin-top: 10%;
   gap: 3em;
   &__decor {
+    display: flex;
     width: 15%;
   }
+  &__photo {
+    display: flex;
+    gap: 3em;
+  }
+  &__container {
+  }
+}
+.about-photo {
+  margin: auto;
+  width: 30%;
 }
