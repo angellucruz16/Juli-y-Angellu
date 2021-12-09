@@ -8,11 +8,67 @@
 }
 
 body {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   overflow-x: hidden;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: auto;
+  max-width: 1400px;
+}
+
+.title {
+  font-family: bely-display, sans-serif;
+  font-size: 2em;
+}
+
+.logo {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo img {
+  margin: 7em;
+  width: 170px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-top: 2%;
+  gap: 16em;
+}
+
+.header__main {
+  width: 25em;
+}
+
+.header__title {
+  font-family: bely-display, sans-serif;
+  position: absolute;
+  top: 9em;
+  left: 7em;
 }
 /*# sourceMappingURL=style.css.map */
