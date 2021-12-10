@@ -61,6 +61,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 10%;
+  margin-bottom: 10%;
   gap: 3em;
   &__decor {
     display: flex;
@@ -70,12 +71,19 @@ body {
     display: flex;
     gap: 3em;
   }
-  &__container {
-  }
+ &__photo__container{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+   width: 15em;
+   gap: 3em;
+ }
 }
 .about-photo {
   margin: auto;
-  width: 30%;
+  width: 65%;
 }
 
 .webgl{
@@ -93,3 +101,12 @@ body {
 
 }
 
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+main {
+  position: absolute;
+}

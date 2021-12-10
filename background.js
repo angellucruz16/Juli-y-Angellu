@@ -31,7 +31,7 @@ camera.position.z = 5;
 const animate = function () {
     requestAnimationFrame( animate );
 
-    //animación cubo
+    //animación torus
     torus.rotation.x += 0.01;
     torus.rotation.y += 0.01;
 

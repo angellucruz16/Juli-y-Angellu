@@ -138,13 +138,10 @@ const animate = function () {
     ball.rotation.z = -.8 * (targetY - ball.rotation.x);
 
 
-
-
     renderer.render(scene, camera);
     window.requestAnimationFrame(animate)
 
 };
-
 
 
 animate();
