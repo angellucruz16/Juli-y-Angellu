@@ -48,7 +48,7 @@ Array(200).fill().forEach(stars);
 
 // 🍒 add a background img
 
-const spaceImage = new THREE.TextureLoader().load('spacebg.png');
+const spaceImage = new THREE.TextureLoader().load('./img/spacebg.png');
 scene.background = spaceImage;
 
 function moveCamera(){
