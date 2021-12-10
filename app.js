@@ -1,4 +1,5 @@
 import * as THREE from "https://cdn.skypack.dev/three@0.135.0";
+import { GLTFLoader } from "https://cdn.jsdelivr.net/npm/three@0.121.1/examples/jsm/loaders/GLTFLoader.js";
 
 const canvas = document.querySelector(".webgl");
 
@@ -22,6 +23,7 @@ const renderer = new THREE.WebGLRenderer({
 
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
+
 
 
 // Vidrio
@@ -142,6 +144,7 @@ const animate = function () {
     window.requestAnimationFrame(animate)
 
 };
+
 
 
 animate();
