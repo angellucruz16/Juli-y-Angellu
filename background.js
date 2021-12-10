@@ -20,10 +20,10 @@ document.body.appendChild( renderer.domElement );
 
 
 //cubo
-const geometry = new THREE.BoxGeometry();
-const material = new THREE.MeshBasicMaterial( { color: 0xc4c4c4 } );
-const cube = new THREE.Mesh( geometry, material );
-scene.add( cube );
+const geometry = new THREE.TorusGeometry( 10, 5, 16, 100 );
+const material = new THREE.MeshBasicMaterial( { color: 0xd5d5d5 } );
+const torus = new THREE.Mesh( geometry, material );
+scene.add( torus );
 
 camera.position.z = 5;
 
@@ -32,8 +32,8 @@ const animate = function () {
     requestAnimationFrame( animate );
 
     //animación cubo
-    cube.rotation.x += 0.01;
-    cube.rotation.y += 0.01;
+    torus.rotation.x += 0.01;
+    torus.rotation.y += 0.01;
 
     renderer.render( scene, camera );
 };
